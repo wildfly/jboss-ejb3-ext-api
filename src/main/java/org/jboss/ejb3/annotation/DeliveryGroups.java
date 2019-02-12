@@ -1,6 +1,6 @@
 /*
  * JBoss, Home of Professional Open Source.
- * Copyright 2015, Red Hat Middleware LLC, and individual contributors
+ * Copyright 2019, Red Hat Middleware LLC, and individual contributors
  * as indicated by the @author tags. See the copyright.txt file in the
  * distribution for a full listing of individual contributors.
  *
@@ -22,25 +22,17 @@
 package org.jboss.ejb3.annotation;
 
 import java.lang.annotation.ElementType;
-import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Adds the MDB to one or more delivery groups.
- * <br>
- *    In the case of a single delivery group,  the messages are delivered to the MDB only when the delivery group is active. If the
- * delivery group is not active, the messages will not be delivered until an administrator executes
- * a management operation on the MDB delivery group to activate it.
- * <br> For multiple delivery groups, this annotation is repeatable and can be used more than once in the same MDB.
- * If multiple delivery groups are specified, the messages are delivered to the MDB only when all specified delivery groups are active.
+ * Containing annotation type for repeatable annotation {@link DeliveryGroup}.
  *
  * @author Flavia Rainone
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Repeatable(DeliveryGroups.class)
-public @interface DeliveryGroup {
-   String value();
+public @interface DeliveryGroups {
+   DeliveryGroup[] value();
 }
