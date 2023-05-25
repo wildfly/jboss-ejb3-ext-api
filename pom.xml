@@ -27,6 +27,14 @@
    <description>JBoss EJB 3 API for Bean Providers</description>
    <url>http://www.jboss.org/ejb3/</url>
 
+   <licenses>
+     <license>
+       <name>GNU Lesser General Public License v3.0 only</name>
+       <url>http://repository.jboss.org/licenses/lgpl-3.0.txt</url>
+       <distribution>repo</distribution>
+     </license>
+   </licenses>
+   
    <developers>
       <developer>
          <name>Carlo de Wolf</name>
