@@ -31,8 +31,10 @@ import java.lang.annotation.Target;
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision:67157 $
+ * @deprecated the clusterability of an EJB is determined by the capabilities of the associated server and is explicitly disabled via {@link javax.ejb.Stateful#passivationCapable()}.
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
+@Deprecated
 public @interface Clustered {
 }
