@@ -1,12 +1,14 @@
 package org.jboss.ejb3.extapi.testcompilation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.jboss.ejb3.annotation.DeliveryActive;
+import org.jboss.ejb3.annotation.DeliveryGroup;
+import org.jboss.ejb3.annotation.DeliveryGroups;
 import org.jboss.ejb3.annotation.ResourceAdapter;
 import org.jboss.ejb3.annotation.RunAsPrincipal;
 import org.jboss.ejb3.annotation.SecurityDomain;
 import org.jboss.ejb3.annotation.TransactionTimeout;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * A Test Object for compilation only to ensure that the 
@@ -24,6 +26,7 @@ import java.util.concurrent.TimeUnit;
 @SecurityDomain(value="securityDomain",unauthenticatedPrincipal="unAuthPrincipal")
 @TransactionTimeout(value = 0, unit = TimeUnit.MINUTES)
 @DeliveryActive(false)
+@DeliveryGroups({@DeliveryGroup("group1"), @DeliveryGroup("group2")})
 public class TestCompilationBean
 {
 }
