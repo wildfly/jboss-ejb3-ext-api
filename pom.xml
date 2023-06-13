@@ -1,81 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
    <parent>
       <groupId>org.jboss</groupId>
       <artifactId>jboss-parent</artifactId>
       <version>39</version>
    </parent>
 
-   <modelVersion>4.0.0</modelVersion>
-
    <groupId>org.jboss.ejb3</groupId>
    <artifactId>jboss-ejb3-ext-api</artifactId>
    <version>2.3.1.Final-SNAPSHOT</version>
-   <build>
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-               <source>8</source>
-               <target>8</target>
-            </configuration>
-         </plugin>
-      </plugins>
-   </build>
+
    <name>JBoss EJB 3 Extension API</name>
    <description>JBoss EJB 3 API for Bean Providers</description>
    <url>http://www.jboss.org/ejb3/</url>
 
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+         </plugin>
+      </plugins>
+   </build>
+
    <licenses>
      <license>
        <name>GNU Lesser General Public License v3.0 only</name>
-       <url>http://repository.jboss.org/licenses/lgpl-3.0.txt</url>
+       <url>https://repository.jboss.org/licenses/lgpl-3.0.txt</url>
        <distribution>repo</distribution>
      </license>
    </licenses>
    
-   <developers>
-      <developer>
-         <name>Carlo de Wolf</name>
-         <email>cdewolf@redhat.com</email>
-         <organization>JBoss, a division of Red Hat, Inc.</organization>
-         <organizationUrl>http://www.jboss.com</organizationUrl>
-         <roles>
-            <role>Project Lead</role>
-         </roles>
-         <timezone>+1</timezone>
-      </developer>
-      <developer>
-         <name>Andrew Lee Rubinger</name>
-         <email>andrew.rubinger@redhat.com</email>
-         <organization>JBoss, a division of Red Hat, Inc.</organization>
-         <organizationUrl>http://www.jboss.com</organizationUrl>
-         <roles>
-            <role>Developer</role>
-         </roles>
-         <timezone>-5</timezone>
-      </developer>
-      <developer>
-         <name>Jaikiran Pai</name>
-         <email>jpai@redhat.com</email>
-         <organization>JBoss, a division of Red Hat, Inc.</organization>
-         <organizationUrl>http://www.jboss.com</organizationUrl>
-         <roles>
-            <role>Developer</role>
-         </roles>
-         <timezone>+5:30</timezone>
-      </developer>
-   </developers>
-
    <issueManagement>
       <system>jira</system>
       <url>https://issues.jboss.org/browse/EJBTHREE</url>
    </issueManagement>
 
    <scm>
-      <connection>scm:git:git://github.com/jbossejb3/jboss-ejb3-ext-api.git</connection>
-      <developerConnection>scm:git:git@github.com:jbossejb3/jboss-ejb3-ext-api.git</developerConnection>
-      <url>http://github.com/jbossejb3/jboss-ejb3-ext-api</url>
+      <connection>scm:git:git://github.com/wildfly/jboss-ejb3-ext-api.git</connection>
+      <developerConnection>scm:git:git@github.com:wildfly/jboss-ejb3-ext-api.git</developerConnection>
+      <url>https://github.com/wildfly/jboss-ejb3-ext-api</url>
    </scm>
 </project>
