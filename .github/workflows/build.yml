@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - '.gitignore'
       - 'CODEOWNERS'
-      - 'LICENSE'
+      - 'LICENSE.txt'
       - 'NOTICE'
       - 'README.md'
       - 'CONTRIBUTING.md'
