@@ -16,6 +16,11 @@
    <description>JBoss EJB 3 API for Bean Providers</description>
    <url>http://www.jboss.org/ejb3/</url>
 
+   <properties>
+      <maven.compiler.source>8</maven.compiler.source>
+      <maven.compiler.target>8</maven.compiler.target>
+   </properties>
+
    <build>
       <plugins>
          <plugin>
@@ -32,7 +37,7 @@
        <distribution>repo</distribution>
      </license>
    </licenses>
-   
+
    <issueManagement>
       <system>jira</system>
       <url>https://issues.jboss.org/browse/EJBTHREE</url>
