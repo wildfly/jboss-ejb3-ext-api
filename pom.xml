@@ -19,7 +19,17 @@
    <properties>
       <maven.compiler.source>8</maven.compiler.source>
       <maven.compiler.target>8</maven.compiler.target>
+      <version.jakarta.ejb-api>4.0.1</version.jakarta.ejb-api>
    </properties>
+
+   <dependencies>
+      <dependency>
+         <groupId>jakarta.ejb</groupId>
+         <artifactId>jakarta.ejb-api</artifactId>
+         <version>${version.jakarta.ejb-api}</version>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
 
    <build>
       <plugins>
