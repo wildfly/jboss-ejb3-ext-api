@@ -17,6 +17,9 @@
    <url>http://www.jboss.org/ejb3/</url>
 
    <properties>
+      <nexus.repository.staging>wildfly-staging</nexus.repository.staging>
+      <nexus.staging.tag>jboss-ejb3-ext-api-${project.version}</nexus.staging.tag>
+
       <version.jakarta.ejb-api>4.0.1</version.jakarta.ejb-api>
    </properties>
 
